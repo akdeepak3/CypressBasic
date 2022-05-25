@@ -1,6 +1,7 @@
 {
     "baseUrl" : "https://react-redux.realworld.io",
     "reporter": "cypress-multi-reporters",
+    "video": false,
     "reporterOptions": {
         "reporterEnabled": "mochawesome",
         "mochawesomeReporterOptions": {
