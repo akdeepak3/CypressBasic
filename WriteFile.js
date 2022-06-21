@@ -18,7 +18,7 @@ var customfileString = fs.readFileSync(
 
 tableContent = "Please find the Overview Report" + tableContent + customfileString;
 
-fs.writeFile(writeFilePath, tableContent,{encoding: "utf8"},
+fs.writeFile(writeFilePath, tableContent,{encoding: "ASCII"},
     (err) => {
         if (err) {
             console.error(err);
