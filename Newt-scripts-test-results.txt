@@ -7,21 +7,21 @@
   ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
   │ Cypress:    3.8.3                                                                              │
   │ Browser:    Electron 78 (headless)                                                             │
-  │ Specs:      6 found (Login.feature, Login\login.js, pageObjects\login.js, QAM\TC01_basics.spec │
-  │             .js, QAM\TC02_url.spec.js, QAM\TC04_customCommand.spec.js)                         │
+  │ Specs:      4 found (Login.feature, Login\login.js, pageObjects\login.js, QAM\TC01_basics.spec │
+  │             .js)                                                                               │
   └────────────────────────────────────────────────────────────────────────────────────────────────┘
 
 
 ────────────────────────────────────────────────────────────────────────────────────────────────────
                                                                                                     
-  Running:  Login.feature                                                                   (1 of 6)
+  Running:  Login.feature                                                                   (1 of 4)
 undefined
 
   Login
     1) Conduit Login
 undefined
 undefined
-  0 passing (44s)
+  0 passing (16s)
   1 failing
 undefined
   1) Login
@@ -56,7 +56,7 @@ undefined
   │ Skipped:      0                                                                                │
   │ Screenshots:  1                                                                                │
   │ Video:        false                                                                            │
-  │ Duration:     43 seconds                                                                       │
+  │ Duration:     15 seconds                                                                       │
   │ Spec Ran:     Login.feature                                                                    │
   └────────────────────────────────────────────────────────────────────────────────────────────────┘
 
@@ -69,12 +69,12 @@ undefined
 
 ────────────────────────────────────────────────────────────────────────────────────────────────────
                                                                                                     
-  Running:  Login\login.js                                                                  (2 of 6)
+  Running:  Login\login.js                                                                  (2 of 4)
 undefined
 
   1) An uncaught error was detected outside of a test
 undefined
-  0 passing (495ms)
+  0 passing (518ms)
   1 failing
 undefined
   1) An uncaught error was detected outside of a test:
@@ -87,10 +87,10 @@ When Cypress detects uncaught errors originating from your test code it will aut
 Cypress could not associate this error to any specific test.
 
 We dynamically generated a new test to display this failure.
-      at Object.1 (https://react-redux.realworld.io/__cypress/tests?p=cypress\integration\Login\login.js-884:4:1)
-      at o (https://react-redux.realworld.io/__cypress/tests?p=cypress\integration\Login\login.js-884:1:265)
-      at r (https://react-redux.realworld.io/__cypress/tests?p=cypress\integration\Login\login.js-884:1:431)
-      at https://react-redux.realworld.io/__cypress/tests?p=cypress\integration\Login\login.js-884:1:460
+      at Object.1 (https://react-redux.realworld.io/__cypress/tests?p=cypress\integration\Login\login.js-755:4:1)
+      at o (https://react-redux.realworld.io/__cypress/tests?p=cypress\integration\Login\login.js-755:1:265)
+      at r (https://react-redux.realworld.io/__cypress/tests?p=cypress\integration\Login\login.js-755:1:431)
+      at https://react-redux.realworld.io/__cypress/tests?p=cypress\integration\Login\login.js-755:1:460
 
 undefined
 undefined
@@ -121,7 +121,7 @@ undefined
 
 ────────────────────────────────────────────────────────────────────────────────────────────────────
                                                                                                     
-  Running:  pageObjects\login.js                                                            (3 of 6)
+  Running:  pageObjects\login.js                                                            (3 of 4)
 undefined
 undefined
   0 passing (1ms)
@@ -146,14 +146,14 @@ undefined
 
 ────────────────────────────────────────────────────────────────────────────────────────────────────
                                                                                                     
-  Running:  QAM\TC01_basics.spec.js                                                         (4 of 6)
+  Running:  QAM\TC01_basics.spec.js                                                         (4 of 4)
 undefined
 
   Login
-    √ Sign in (32553ms)
+    √ Sign in (3845ms)
 undefined
 undefined
-  1 passing (33s)
+  1 passing (4s)
 undefined
 [mochawesome] Report JSON saved to C:\Users\akdee\Desktop\TestingLearn\Cypress Basic-MyOwn\CypressBasic\cypress\reports\mocha\mochawesome_003.json
 
@@ -168,165 +168,9 @@ undefined
   │ Skipped:      0                                                                                │
   │ Screenshots:  0                                                                                │
   │ Video:        false                                                                            │
-  │ Duration:     32 seconds                                                                       │
+  │ Duration:     3 seconds                                                                        │
   │ Spec Ran:     QAM\TC01_basics.spec.js                                                          │
   └────────────────────────────────────────────────────────────────────────────────────────────────┘
-
-
-────────────────────────────────────────────────────────────────────────────────────────────────────
-                                                                                                    
-  Running:  QAM\TC02_url.spec.js                                                            (5 of 6)
-undefined
-
-  Create and mark-unmark as favorite
-    1) Sign in
-    2) Create a post
-    3) Mark-unmark as favorite
-undefined
-undefined
-  0 passing (52s)
-  3 failing
-undefined
-  1) Create and mark-unmark as favorite
-       Sign in:
-     CypressError: Timed out retrying: Expected to find content: 'Your Feed' but never did.
-      at Object.cypressErr (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:86207:11)
-      at Object.throwErr (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:86162:18)
-      at Object.throwErrByPath (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:86194:17)
-      at retry (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:76849:16)
-      at onFailFn (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:65634:16)
-      at tryCatcher (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:120203:23)
-      at Promise._settlePromiseFromHandler (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:118139:31)
-      at Promise._settlePromise (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:118196:18)
-      at Promise._settlePromise0 (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:118241:10)
-      at Promise._settlePromises (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:118316:18)
-      at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:114928:16)
-      at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:114938:10)
-      at Async.drainQueues (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:114812:14)
-
-  2) Create and mark-unmark as favorite
-       Create a post:
-     CypressError: Timed out retrying: Expected to find content: 'New Post' but never did.
-      at Object.cypressErr (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:86207:11)
-      at Object.throwErr (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:86162:18)
-      at Object.throwErrByPath (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:86194:17)
-      at retry (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:76849:16)
-      at onFailFn (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:65634:16)
-      at tryCatcher (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:120203:23)
-      at Promise._settlePromiseFromHandler (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:118139:31)
-      at Promise._settlePromise (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:118196:18)
-      at Promise._settlePromise0 (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:118241:10)
-      at Promise._settlePromises (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:118316:18)
-      at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:114928:16)
-      at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:114938:10)
-      at Async.drainQueues (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:114812:14)
-
-  3) Create and mark-unmark as favorite
-       Mark-unmark as favorite:
-     CypressError: Timed out retrying: Expected to find content: 'QAMs' within the element: [ <a.nav-link>, 2 more... ] but never did.
-      at Object.cypressErr (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:86207:11)
-      at Object.throwErr (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:86162:18)
-      at Object.throwErrByPath (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:86194:17)
-      at retry (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:76849:16)
-      at onFailFn (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:65634:16)
-      at tryCatcher (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:120203:23)
-      at Promise._settlePromiseFromHandler (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:118139:31)
-      at Promise._settlePromise (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:118196:18)
-      at Promise._settlePromise0 (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:118241:10)
-      at Promise._settlePromises (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:118316:18)
-      at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:114928:16)
-      at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:114938:10)
-      at Async.drainQueues (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:114812:14)
-
-undefined
-undefined
-[mochawesome] Report JSON saved to C:\Users\akdee\Desktop\TestingLearn\Cypress Basic-MyOwn\CypressBasic\cypress\reports\mocha\mochawesome_004.json
-
-
-  (Results)
-
-  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
-  │ Tests:        3                                                                                │
-  │ Passing:      0                                                                                │
-  │ Failing:      3                                                                                │
-  │ Pending:      0                                                                                │
-  │ Skipped:      0                                                                                │
-  │ Screenshots:  3                                                                                │
-  │ Video:        false                                                                            │
-  │ Duration:     51 seconds                                                                       │
-  │ Spec Ran:     QAM\TC02_url.spec.js                                                             │
-  └────────────────────────────────────────────────────────────────────────────────────────────────┘
-
-
-  (Screenshots)
-
-  -  C:\Users\akdee\Desktop\TestingLearn\Cypress Basic-MyOwn\CypressBasic\cypress\scr     (1280x720)
-     eenshots\QAM\TC02_url.spec.js\Create and mark-unmark as favorite -- Sign in (fai               
-     led).png                                                                                       
-  -  C:\Users\akdee\Desktop\TestingLearn\Cypress Basic-MyOwn\CypressBasic\cypress\scr     (1280x720)
-     eenshots\QAM\TC02_url.spec.js\Create and mark-unmark as favorite -- Create a pos               
-     t (failed).png                                                                                 
-  -  C:\Users\akdee\Desktop\TestingLearn\Cypress Basic-MyOwn\CypressBasic\cypress\scr     (1280x720)
-     eenshots\QAM\TC02_url.spec.js\Create and mark-unmark as favorite -- Mark-unmark                
-     as favorite (failed).png                                                                       
-
-
-────────────────────────────────────────────────────────────────────────────────────────────────────
-                                                                                                    
-  Running:  QAM\TC04_customCommand.spec.js                                                  (6 of 6)
-undefined
-
-  Create and mark-unmark as favorite
-    1) "before all" hook for "Create a post"
-undefined
-undefined
-  0 passing (43s)
-  1 failing
-undefined
-  1) Create and mark-unmark as favorite
-       "before all" hook for "Create a post":
-     CypressError: Timed out retrying: Expected to find content: 'Your Feed' but never did.
-
-Because this error occurred during a 'before all' hook we are skipping the remaining tests in the current suite: 'Create and mark-unmark as f...'
-      at Object.cypressErr (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:86207:11)
-      at Object.throwErr (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:86162:18)
-      at Object.throwErrByPath (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:86194:17)
-      at retry (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:76849:16)
-      at onFailFn (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:65634:16)
-      at tryCatcher (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:120203:23)
-      at Promise._settlePromiseFromHandler (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:118139:31)
-      at Promise._settlePromise (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:118196:18)
-      at Promise._settlePromise0 (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:118241:10)
-      at Promise._settlePromises (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:118316:18)
-      at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:114928:16)
-      at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:114938:10)
-      at Async.drainQueues (https://react-redux.realworld.io/__cypress/runner/cypress_runner.js:114812:14)
-
-undefined
-undefined
-[mochawesome] Report JSON saved to C:\Users\akdee\Desktop\TestingLearn\Cypress Basic-MyOwn\CypressBasic\cypress\reports\mocha\mochawesome_005.json
-
-
-  (Results)
-
-  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
-  │ Tests:        2                                                                                │
-  │ Passing:      0                                                                                │
-  │ Failing:      1                                                                                │
-  │ Pending:      0                                                                                │
-  │ Skipped:      1                                                                                │
-  │ Screenshots:  1                                                                                │
-  │ Video:        false                                                                            │
-  │ Duration:     42 seconds                                                                       │
-  │ Spec Ran:     QAM\TC04_customCommand.spec.js                                                   │
-  └────────────────────────────────────────────────────────────────────────────────────────────────┘
-
-
-  (Screenshots)
-
-  -  C:\Users\akdee\Desktop\TestingLearn\Cypress Basic-MyOwn\CypressBasic\cypress\scr     (1280x720)
-     eenshots\QAM\TC04_customCommand.spec.js\Create and mark-unmark as favorite -- Cr               
-     eate a post -- before all hook (failed).png                                                    
 
 
 ====================================================================================================
@@ -336,17 +180,13 @@ undefined
 
        Spec                                              Tests  Passing  Failing  Pending  Skipped  
   ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
-  │ ×  Login.feature                            00:43        1        -        1        -        - │
+  │ ×  Login.feature                            00:15        1        -        1        -        - │
   ├────────────────────────────────────────────────────────────────────────────────────────────────┤
-  │ ×  Login\login.js                           490ms        1        -        1        -        - │
+  │ ×  Login\login.js                           503ms        1        -        1        -        - │
   ├────────────────────────────────────────────────────────────────────────────────────────────────┤
-  │ √  pageObjects\login.js                       1ms        -        -        -        -        - │
+  │ √  pageObjects\login.js                       3ms        -        -        -        -        - │
   ├────────────────────────────────────────────────────────────────────────────────────────────────┤
-  │ √  QAM\TC01_basics.spec.js                  00:32        1        1        -        -        - │
-  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
-  │ ×  QAM\TC02_url.spec.js                     00:51        3        -        3        -        - │
-  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
-  │ ×  QAM\TC04_customCommand.spec.js           00:42        2        -        1        -        1 │
+  │ √  QAM\TC01_basics.spec.js                  00:03        1        1        -        -        - │
   └────────────────────────────────────────────────────────────────────────────────────────────────┘
-    ×  4 of 6 failed (67%)                      02:51        8        1        6        -        1  
+    ×  2 of 4 failed (50%)                      00:20        3        1        2        -        -  
 
